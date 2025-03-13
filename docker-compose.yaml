@@ -150,7 +150,7 @@ services:
       - "5001:5001"
     environment:
       - OTEL_EXPORTER_OTLP_ENDPOINT=${OTEL_EXPORTER_OTLP_ENDPOINT}
-      - OTEL_RESOURCE_ATTRIBUTES=service.name=todoui-flask
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=combined-flask
       - OTEL_METRICS_EXPORTER=otlp
       - OTEL_TRACES_EXPORTER=otlp
       - OTEL_PYTHON_DISABLED_INSTRUMENTATIONS=aws_lambda
